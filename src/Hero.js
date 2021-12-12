@@ -12,7 +12,7 @@ import {
   createIcon,
 } from '@chakra-ui/react';
 
-export default function CallToActionWithAnnotation() {
+export default function Hero() {
   return (
     <>
       <Head>
@@ -31,9 +31,9 @@ export default function CallToActionWithAnnotation() {
           pt={['18', '12', '0']}
         >
           <Box
-            fontSize={['5xl', '5xl', '6xl']}
+            fontSize={['4xl', '5xl', '6xl']}
             fontWeight={'700'}
-            lineHeight={['55px', '55px', '70px']}
+            lineHeight={['48px', '55px', '70px']}
             h={'fit-content'}
           >
             <Text
@@ -68,11 +68,20 @@ export default function CallToActionWithAnnotation() {
             position={'relative'}
           >
             <Button
+              as='a'
+              href='https://chat.whatsapp.com/LFKseiaqfC65rK97vJ2G5B'
+              isExternal
               colorScheme={'green'}
               bg={'black'}
               rounded={'full'}
               px={6}
               _hover={{
+                bgGradient: 'linear(to-l,#3783F6 ,  #5F0FCD)',
+                shadow: 'sm',
+                transform: ' translateY(-7px)',
+                boxShadow: '0px 16px 20px rgb(94, 107, 177 , 0.44)',
+              }}
+              _active={{
                 bgGradient: 'linear(to-l,#3783F6 ,  #5F0FCD)',
                 shadow: 'sm',
                 transform: ' translateY(-7px)',
@@ -92,14 +101,14 @@ export default function CallToActionWithAnnotation() {
                 top={'10px'}
               />
               <Text
-                fontSize={'lg'}
+                fontSize={['md','lg']}
                 fontFamily={'Caveat'}
                 position={'absolute'}
-                right={'-125px'}
-                top={'-15px'}
+                right={['-105','-125px']}
+                top={['-20px','-15px']}
                 transform={'rotate(20deg)'}
               >
-                Watsapp Group
+                Whatsapp Group
               </Text>
             </Box>
           </Stack>

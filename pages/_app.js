@@ -32,6 +32,7 @@ function MyApp({ Component, pageProps }) {
           name='twitter:image'
           content='https://res.cloudinary.com/demonicirfan/image/upload/v1639332721/website_qgq9fb.png'
         />
+        <link rel='icon' href='/favicon.ico' />
       </Head>
       <Component {...pageProps} />
     </ChakraProvider>
