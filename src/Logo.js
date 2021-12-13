@@ -6,7 +6,7 @@ const Logo = (props) => {
   return (
     <Box>
       <Text
-        fontFamily={'Eldwin'}
+        fontFamily={'Eldwin, Eldwin1'}
         fontSize={props.size}
         as='i'
         fontWeight={'600'}

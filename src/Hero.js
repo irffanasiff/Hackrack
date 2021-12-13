@@ -47,7 +47,7 @@ export default function Hero() {
               as={'span'}
               fontWeight={'300'}
               fontStyle={'italic'}
-              fontFamily={'Eldwin'}
+              fontFamily={'Eldwin, Eldwin1'}
               lineHeight={['40px', '45px', '60px']}
             >
               {' '}
@@ -68,6 +68,7 @@ export default function Hero() {
               as='i'
               href='https://hackclub.com/'
               _hover={{
+                WebkitTextDecorationColor: 'red',
                 textDecorationLine: 'underline',
                 textDecorationStyle: 'wavy',
                 textDecorationColor: 'red',
@@ -75,8 +76,9 @@ export default function Hero() {
             >
               Hackclub
             </Link>
-            . We conduct and attend Meets, Workshops, Events and Hackathons. If
-            you are a tech enthusiast join Hackrack and lets build together.
+            . We conduct and attend Workshops, Events, Hackathons and other fun
+            Community meetups. If you are a tech enthusiast join Hackrack, lets
+            build together.
           </Text>
           <Stack
             direction={'column'}
