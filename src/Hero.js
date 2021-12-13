@@ -32,34 +32,28 @@ export default function Hero() {
         >
           <Box
             fontSize={['4xl', '5xl', '6xl']}
-            fontWeight={'700'}
-            lineHeight={['48px', '55px', '70px']}
+            fontWeight={['700', '800']}
+            lineHeight={['48px', '55px', '68px']}
             h={'fit-content'}
+            letterSpacing={'-2px'}
+            bgGradient='linear(to-l, #3783F6 , #02CBDE, #5F0FCD )'
+            bgClip='text'
           >
-            <Text
-              as={'span'}
-              bgGradient='linear(to-l, #3783F6 , #02CBDE, #5F0FCD )'
-              bgClip='text'
-            >
-              Join
-            </Text>
+            <Text as={'span'}>Join</Text>
             <Text
               as={'span'}
               fontWeight={'300'}
               fontStyle={'italic'}
               fontFamily={'Eldwin, Eldwin1'}
               lineHeight={['40px', '45px', '60px']}
+              letterSpacing={'0px'}
+              bgColor={'black'}
+              bgClip='text'
             >
               {' '}
               hackrack{' '}
             </Text>
-            <Text
-              as={'span'}
-              bgGradient='linear(to-l,#3783F6 , #02CBDE, #5F0FCD)'
-              bgClip='text'
-            >
-              & be a part of the community
-            </Text>
+            <Text as={'span'}>& be a part of the community</Text>
           </Box>
           <Text px={'4'} fontSize={['sm', 'md', 'lg']}>
             Hackrack is a community run by students based in India. We are
@@ -89,7 +83,7 @@ export default function Hero() {
           >
             <Button
               as='a'
-              href='https://chat.whatsapp.com/LFKseiaqfC65rK97vJ2G5B'
+              href='https://chat.whatsapp.com/IrjtTcqZvY7EefQ7bDoaK8'
               isExternal
               colorScheme={'green'}
               bg={'black'}
