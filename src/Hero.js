@@ -76,7 +76,7 @@ export default function Hero() {
               Hackclub
             </Link>
             . We conduct and attend Meets, Workshops, Events and Hackathons. If
-            you are a tech enthusiast join Hackrack. Lets
+            you are a tech enthusiast join Hackrack and lets build together
           </Text>
           <Stack
             direction={'column'}

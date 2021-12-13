@@ -2,7 +2,6 @@
 import {
   Box,
   Flex,
-  Image,
   HStack,
   Link,
   IconButton,
