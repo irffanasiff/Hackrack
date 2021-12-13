@@ -2,13 +2,13 @@ import React from 'react';
 import {
   Box,
   Stack,
-  Image,
   Flex,
   Text,
   ButtonGroup,
   IconButton,
 } from '@chakra-ui/react';
 import { FaGithub, FaWhatsapp, FaTwitter } from 'react-icons/fa';
+import Logo from './Logo';
 
 const Footer = () => (
   <Box
@@ -21,13 +21,7 @@ const Footer = () => (
   >
     <Stack>
       <Stack direction='row' spacing='4' align='center' justify='space-between'>
-        <Image
-          alt='logo'
-          src='/hackracklogo.png'
-          boxSize={'32'}
-          objectFit={'scale-down'}
-          h={'-moz-max-content'}
-        />
+        <Logo size={'3xl'} color={'#3779B6'} />
         <ButtonGroup variant='ghost' color='gray.600'>
           <IconButton
             as='a'

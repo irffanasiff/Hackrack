@@ -2,7 +2,6 @@
 import Head from 'next/head';
 import {
   Box,
-  Heading,
   Container,
   Text,
   Button,

@@ -11,8 +11,9 @@ import {
   Stack,
 } from '@chakra-ui/react';
 import { HamburgerIcon, CloseIcon } from '@chakra-ui/icons';
+import Logo from './Logo';
 
-const Links = ['Event', 'Blogs', 'Team'];
+const Links = ['Events', 'Blog', 'Team'];
 
 const NavLink = ({ children }) => (
   <Link
@@ -60,13 +61,14 @@ export default function Navbar() {
             onClick={isOpen ? onClose : onOpen}
           />
           <HStack alignItems={'center'} textAlign={'center'}>
-            <Image
+            {/* <Image
               src='/hackracklogo.png'
               alt='logo'
               boxSize={'7rem'}
               objectFit={'scale-down'}
               textAlign={'center'}
-            />
+            /> */}
+            <Logo size={'3xl'} />
           </HStack>
           <HStack alignItems={'center'} spacing={8}>
             <HStack
