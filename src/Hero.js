@@ -9,6 +9,7 @@ import {
   Icon,
   useColorModeValue,
   createIcon,
+  Link,
 } from '@chakra-ui/react';
 
 export default function Hero() {
@@ -42,7 +43,13 @@ export default function Hero() {
             >
               Join
             </Text>
-            <Text as={'span'} fontWeight={'300'} fontStyle={'italic'}>
+            <Text
+              as={'span'}
+              fontWeight={'300'}
+              fontStyle={'italic'}
+              fontFamily={'Eldwin'}
+              lineHeight={['40px', '45px', '60px']}
+            >
               {' '}
               hackrack{' '}
             </Text>
@@ -55,9 +62,21 @@ export default function Hero() {
             </Text>
           </Box>
           <Text px={'4'}>
-            Hackrack is a Students Community based in India. We conduct and
-            attend workshops, Events and Hackathons. If you are a tech/design
-            enthusiast join Hackrack.
+            Hackrack is a Students run Community based in India.We are supported
+            by{' '}
+            <Link
+              as='i'
+              href='https://hackclub.com/'
+              _hover={{
+                textDecorationLine: 'underline',
+                textDecorationStyle: 'wavy',
+                textDecorationColor: 'red',
+              }}
+            >
+              Hackclub
+            </Link>
+            . We conduct and attend Meets, Workshops, Events and Hackathons. If
+            you are a tech enthusiast join Hackrack. Lets
           </Text>
           <Stack
             direction={'column'}
@@ -100,11 +119,11 @@ export default function Hero() {
                 top={'10px'}
               />
               <Text
-                fontSize={['md','lg']}
+                fontSize={['md', 'lg']}
                 fontFamily={'Caveat'}
                 position={'absolute'}
-                right={['-105','-125px']}
-                top={['-20px','-15px']}
+                right={['-105', '-125px']}
+                top={['-20px', '-15px']}
                 transform={'rotate(20deg)'}
               >
                 Whatsapp Group
