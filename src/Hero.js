@@ -61,9 +61,9 @@ export default function Hero() {
               & be a part of the community
             </Text>
           </Box>
-          <Text px={'4'}>
-            Hackrack is a Students run Community based in India.We are supported
-            by{' '}
+          <Text px={'4'} fontSize={['sm', 'md', 'lg']}>
+            Hackrack is a community run by students based in India. We are
+            supported by{' '}
             <Link
               as='i'
               href='https://hackclub.com/'
@@ -76,7 +76,7 @@ export default function Hero() {
               Hackclub
             </Link>
             . We conduct and attend Meets, Workshops, Events and Hackathons. If
-            you are a tech enthusiast join Hackrack and lets build together
+            you are a tech enthusiast join Hackrack and lets build together.
           </Text>
           <Stack
             direction={'column'}
@@ -122,7 +122,7 @@ export default function Hero() {
                 fontSize={['md', 'lg']}
                 fontFamily={'Caveat'}
                 position={'absolute'}
-                right={['-105', '-125px']}
+                right={['-95', '-125px']}
                 top={['-20px', '-15px']}
                 transform={'rotate(20deg)'}
               >
