@@ -8,7 +8,7 @@ const Banner = () => (
       direction={{ base: 'column', sm: 'row' }}
       justifyContent='center'
       alignItems='center'
-      mr={'-4'}
+      mr={'0'}
       overflow={'hidden'}
       py='3'
       px={{ base: '3', md: '6', lg: '8' }}
