@@ -1,1 +1,1 @@
-## Hackrack ![hackrack](public/icon.png)
+![hackrack](public/hackracklogo.png)
