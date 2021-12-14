@@ -3,7 +3,7 @@ import { VscWarning, VscGithubAlt } from 'react-icons/vsc';
 import { Box, HStack, Flex, Stack, Text, Button, Link } from '@chakra-ui/react';
 
 const Banner = () => (
-  <Box as='section' pt='8' pb='12'>
+  <Box as='section' pt='4' pb='12'>
     <Stack
       direction={{ base: 'column', sm: 'row' }}
       justifyContent='center'
@@ -14,6 +14,9 @@ const Banner = () => (
       px={{ base: '3', md: '6', lg: '8' }}
       color='white'
       bg={'blue.600'}
+      mx={'auto'}
+      maxW={'3xl'}
+      borderRadius={['0', '0', 'lg']}
     >
       <HStack spacing='3'>
         <Flex color={'yellow.400'} display={['none', 'flex']}>
