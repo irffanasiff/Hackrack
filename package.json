@@ -13,11 +13,13 @@
     "@emotion/react": "^11",
     "@emotion/styled": "^11",
     "@fontsource/inter": "^4.5.1",
+    "@octokit/rest": "^18.12.0",
     "framer-motion": "^4",
     "next": "12.0.7",
     "react": "17.0.2",
     "react-dom": "17.0.2",
-    "react-icons": "^4.3.1"
+    "react-icons": "^4.3.1",
+    "swr": "^1.1.1"
   },
   "devDependencies": {
     "eslint": "8.4.1",
