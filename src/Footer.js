@@ -7,7 +7,7 @@ import {
   ButtonGroup,
   IconButton,
 } from '@chakra-ui/react';
-import { FaGithub, FaTwitter, FaDiscord } from 'react-icons/fa';
+import { FaGithub, FaTwitter, FaDiscord, FaYoutube } from 'react-icons/fa';
 import Logo from './Logo';
 
 const Footer = () => (
@@ -25,9 +25,9 @@ const Footer = () => (
         <ButtonGroup variant='ghost' color='gray.600'>
           <IconButton
             as='a'
-            href='https://github.com/HackrackClub'
-            aria-label='GitHub'
-            icon={<FaGithub fontSize='20px' />}
+            href='https://www.youtube.com/channel/UC-0mKrXsOjNWo27J3Ofg9OA'
+            aria-label='youtube'
+            icon={<FaYoutube fontSize='20px' />}
           />
           <IconButton
             as='a'
