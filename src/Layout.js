@@ -4,6 +4,7 @@ import Header from './Navbar.js';
 import Hero from './Hero';
 import Footer from './Footer';
 import Banner from './Banner.js';
+import Contributors from './Contributors.js';
 
 const Layout = () => {
   return (
@@ -11,6 +12,7 @@ const Layout = () => {
       <Header />
       <Hero />
       <Banner />
+      <Contributors />
       <Divider />
       <Footer />
     </Box>
