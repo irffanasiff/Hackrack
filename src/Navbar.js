@@ -60,14 +60,7 @@ export default function Navbar() {
             onClick={isOpen ? onClose : onOpen}
           />
           <HStack alignItems={'center'} textAlign={'center'}>
-            {/* <Image
-              src='/hackracklogo.png'
-              alt='logo'
-              boxSize={'7rem'}
-              objectFit={'scale-down'}
-              textAlign={'center'}
-            /> */}
-            <Logo size={'3xl'} />
+            <Logo/>
           </HStack>
           <HStack alignItems={'center'} spacing={8}>
             <HStack
