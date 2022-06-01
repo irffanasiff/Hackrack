@@ -1,6 +1,7 @@
 /* eslint-disable @next/next/no-page-custom-font */
 import Head from 'next/head';
 import {
+  Center,
   Box,
   Container,
   Text,
@@ -11,6 +12,8 @@ import {
   createIcon,
   Link,
 } from '@chakra-ui/react';
+import ButtonHOC from './Components/Buttons/ButtonHOC';
+import TextEffect from './Components/Home/Text';
 
 export default function Hero() {
   return (
@@ -74,59 +77,14 @@ export default function Hero() {
             Community meetups. If you are a tech enthusiast join Hackrack, lets
             build together.
           </Text>
-          <Stack
-            direction={'column'}
-            spacing={3}
-            align={'center'}
-            alignSelf={'center'}
-            position={'relative'}
-          >
-            <Button
-              as='a'
-              href='https://chat.whatsapp.com/IrjtTcqZvY7EefQ7bDoaK8'
-              isExternal
-              colorScheme={'green'}
-              bg={'black'}
-              rounded={'full'}
-              px={6}
-              _hover={{
-                bgGradient: 'linear(to-l,#3783F6 ,  #5F0FCD)',
-                shadow: 'sm',
-                transform: ' translateY(-7px)',
-                boxShadow: '0px 16px 20px rgb(94, 107, 177 , 0.44)',
-              }}
-              _active={{
-                bgGradient: 'linear(to-l,#3783F6 ,  #5F0FCD)',
-                shadow: 'sm',
-                transform: ' translateY(-7px)',
-                boxShadow: '0px 16px 20px rgb(94, 107, 177 , 0.44)',
-              }}
-            >
-              Join Now
-            </Button>
-
-            <Box>
-              <Icon
-                as={Arrow}
-                color={useColorModeValue('gray.800', 'gray.300')}
-                w={71}
-                position={'absolute'}
-                right={-71}
-                top={'10px'}
-              />
-              <Text
-                fontSize={['md', 'lg']}
-                fontFamily={'Caveat'}
-                position={'absolute'}
-                right={['-95', '-125px']}
-                top={['-20px', '-15px']}
-                transform={'rotate(20deg)'}
-              >
-                Whatsapp Group
-              </Text>
-            </Box>
-          </Stack>
+          <Center>
+            <ButtonHOC
+              to='https://chat.whatsapp.com/IrjtTcqZvY7EefQ7bDoaK8'
+              title='Join Now ✨'
+            />
+          </Center>
         </Stack>
+        <TextEffect/>
       </Container>
     </>
   );

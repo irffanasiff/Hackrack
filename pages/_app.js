@@ -1,10 +1,17 @@
+/* eslint-disable @next/next/no-page-custom-font */
 import { ChakraProvider } from '@chakra-ui/react';
 import Head from 'next/head';
 import theme from '../styles/Theme';
 
+export const newTheme = {
+  ...theme,
+  shadows: { ...theme.shadows, outline: '0 !important' },
+  // colors: { ...theme.colors, primary: '#ffffff' },
+};
+
 function MyApp({ Component, pageProps }) {
   return (
-    <ChakraProvider theme={theme}>
+    <ChakraProvider theme={newTheme}>
       <Head>
         <title>Hackrack</title>
         <meta name='description' content='Developer Students Community' />
@@ -27,6 +34,12 @@ function MyApp({ Component, pageProps }) {
         <meta
           name='twitter:description'
           content='Hackrack Students Community'
+        />
+        <link rel='preconnect' href='https://fonts.googleapis.com' />
+        <link rel='preconnect' href='https://fonts.gstatic.com' crossOrigin />
+        <link
+          href='https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap'
+          rel='stylesheet'
         />
         <meta
           name='twitter:image'

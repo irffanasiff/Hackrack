@@ -13,7 +13,8 @@ export default async (req, res) => {
       repo: 'hackrack',
     }
   );
+  clg
   return res.status(200).json({
-    data: contributors.data,
+    x: contributors.data,
   });
 };

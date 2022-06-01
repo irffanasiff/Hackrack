@@ -1,4 +1,5 @@
 import '@fontsource/inter';
+import '@fontsource/quicksand';
 import { extendTheme } from '@chakra-ui/react';
 import { Global } from '@emotion/react';
 
@@ -8,8 +9,42 @@ const config = {
 };
 const theme = extendTheme({
   config,
+  colors: {
+    hackrack: {
+      lightGray: '#EDEDED',
+      gray: '#454545',
+      yellow: '#FFDC5D',
+      red: '#EC3750',
+      blue: '#316FA5',
+    },
+  },
+  styles: {
+    global: {
+      'html, body': {
+        // fontFamily: 'sans',
+        background: '#ffffff',
+        color: '#316FA5',
+      },
+    },
+  },
   fonts: {
     body: 'Inter',
+    p: 'Quicksand',
+  },
+  components: {
+    Button: {
+      variants: {
+        light: {
+          bg: '#EDEDED',
+          fontWeight: '300',
+          color: 'black',
+          fontSize: 'xl',
+          textTransform: 'uppercase',
+          rounded: 'full',
+          p: '2.5rem',
+        },
+      },
+    },
   },
 });
 const Fonts = () => {

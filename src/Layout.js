@@ -1,21 +1,18 @@
-import { Box, Divider } from '@chakra-ui/react';
+import { Box, Container, Divider } from '@chakra-ui/react';
 import React from 'react';
 import Header from './Navbar.js';
-import Hero from './Hero';
-import Footer from './Footer';
-import Banner from './Banner.js';
-import Contributors from './Contributors.js';
+import Hero from './Components/Home/Hero';
+import Hackclub from './Components/Home/Hackclub.jsx';
+import Contributors from './Components/Contributors/Contributors.jsx';
 
 const Layout = () => {
   return (
-    <Box>
+    <Container h='full' p='0' m='0' maxW='full'>
       <Header />
       <Hero />
-      <Banner />
+      <Hackclub />
       <Contributors />
-      <Divider />
-      <Footer />
-    </Box>
+    </Container>
   );
 };
 
